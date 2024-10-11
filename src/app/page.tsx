@@ -9,7 +9,7 @@ import { useFormStatus } from "react-dom"
 function SubmitButton() {
   const { pending } = useFormStatus()
   return (
-    <button type="submit" className="p-2 bg-blue-500 text-white rounded" disabled={pending}>
+    <button type="submit" className="p-2 bg-blue-500 text-whte rounded\\\" disabled={pending}>
       {pending ? 'Submitting...' : 'Submit'}
     </button>
   )
@@ -25,9 +25,9 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-no-repeat bg-[url('/background_image.avif')] bg-cover">
+    <div className="bg-no-repeat bg-[url('/background_image.avif')] bg-blend-screen dark:bg-blend-overlay dark:bg-black/75 bg-white/75 bg-cover">
       <div className="flex flex-col h-[calc(100vh-60px)] items-center justify-center">
-        <h1 className="font-bold text-5xl">
+        <h1 className="font-bold text-5xl ">
           Taking drugs is not
           <FlipWords words={words} />
         </h1>
@@ -40,7 +40,7 @@ export default function Home() {
           />
           
           <div className="mb-4">
-            <label className="mr-4">Are you a drug dealer?</label>
+            <label className="mr-4 ">Are you a drug dealer?</label>
             <label className="mr-2">
               <input
                 type="radio"
