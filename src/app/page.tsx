@@ -3,7 +3,7 @@
 
 import { useState } from "react"
 import { FlipWords } from "@/components/ui/flip-words"
-import { insertUser } from "./actions"
+// import { insertUser } from "./actions"
 import { useFormStatus } from "react-dom"
 
 function SubmitButton() {
