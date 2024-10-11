@@ -32,7 +32,11 @@ const FormSchema = z.object({
   }),
 });
 
-const correctAnswers = {
+type QuestionType = {
+  [key: string]: "A" |"B" |"C" |"D" 
+}
+
+const correctAnswers : QuestionType = {
   question1: 'B',
   question2: 'B',
   question3: 'B',
@@ -51,7 +55,7 @@ export default function Quiz() {
     	resolver: zodResolver(FormSchema),
 	})
 
-  async function onSubmit(data: z.infer<typeof FormSchema>) {
+  async function onSubmit(data: QuestionType) {
     // compare user's answers with correct answers and generate feeedback
     const feedback = Object.keys(data).map((key) => {
       const isCorrect = data[key] === correctAnswers[key as keyof typeof data];
