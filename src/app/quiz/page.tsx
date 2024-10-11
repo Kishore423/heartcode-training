@@ -10,8 +10,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { users } from "@/db/schema";
-import { db } from "@vercel/postgres";
+;
 
 
 const FormSchema = z.object({

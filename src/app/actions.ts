@@ -1,8 +1,4 @@
-'use server'
 
-import { db } from '@/db'
-// import { db } from '@vercel/postgres'
-import { users } from '@/db/schema'
 
 export async function insertUser(formData: FormData) {
   const name = formData.get('name') as string

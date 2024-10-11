@@ -20,8 +20,8 @@ export default function Home() {
   const [message, setMessage] = useState("")
 
   async function handleSubmit(formData: FormData) {
-    const result = await insertUser(formData)
-    setMessage(result.message)
+    // const result = await insertUser(formData)
+   // setMessage(result.message)
   }
 
   return (
